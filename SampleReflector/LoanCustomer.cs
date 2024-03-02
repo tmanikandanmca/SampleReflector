@@ -20,9 +20,9 @@ public class LoanCustomer
         this.Id = Id;
         this.Name = Name;
     }
-    public void PrintCustomer()
+    private void PrintCustomer()
     {
-        Console.WriteLine($"Current Customer {Id}" );
-        Console.WriteLine($"Current Customer {Name}" );
+        Console.WriteLine($"Current Loan Customer {Id}");
+        Console.WriteLine($"Current Loan Customer {Name}");
     }
 }

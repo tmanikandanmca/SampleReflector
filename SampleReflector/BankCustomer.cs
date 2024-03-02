@@ -17,7 +17,7 @@ public class BankCustomer
 
     public void PrintCustomer()
     {
-        Console.WriteLine($"Current Customer { Id }");
-        Console.WriteLine($"Current Customer { Name }");
+        Console.WriteLine($"Current Bank Customer { Id }");
+        Console.WriteLine($"Current Bank Customer { Name }");
     }
 }
