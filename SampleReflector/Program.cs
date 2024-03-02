@@ -10,7 +10,9 @@ namespace Reflections
             //BankCustomer customer = new BankCustomer();
             //customer.PrintCustomer();
 
-            var Bankconstructors = typeof(BankCustomer).GetConstructors();
+            var Bank = typeof(BankCustomer);
+
+            var Bankconstructors = Bank.GetConstructors();
 
             Console.WriteLine("Loan bank class details");
             foreach (var (constructor, index) in Bankconstructors
@@ -20,7 +22,7 @@ namespace Reflections
             }
 
 
-            var Bankproperties = typeof(BankCustomer).GetProperties();
+            var Bankproperties = Bank.GetProperties();
 
             Console.WriteLine("Loan bank class details");
             foreach (var (property, index) in Bankproperties
@@ -30,7 +32,7 @@ namespace Reflections
             }
 
 
-            var Methods = typeof(BankCustomer).GetMethods();
+            var Methods = Bank.GetMethods();
 
             Console.WriteLine("Loan bank class details");
             foreach (var (method, index) in Methods
@@ -41,8 +43,9 @@ namespace Reflections
                     Console.WriteLine($" Parameter { Parameter.Name } - { Parameter.ParameterType}");
             }
 
+            var loan = typeof(LoanCustomer);
 
-            var constructors = typeof(LoanCustomer).GetConstructors();
+            var constructors = loan.GetConstructors(BindingFlags.NonPublic|BindingFlags.Instance);
 
             Console.WriteLine("Loan Customer class details");
             foreach(var (constructor,index) in constructors
