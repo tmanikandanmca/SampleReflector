@@ -7,9 +7,8 @@ namespace Reflections
     {
         static void Main(string[] args)
         {
-        //    BankInstance bInstance = new BankInstance();
-        //    bInstance.GetBankCustomer();
-            
+            BankInstance bInstance = new BankInstance();
+            bInstance.GetBankCustomer();
 
             LoanInstance loanInstance = new LoanInstance();
             loanInstance.GetLoanCustomer();

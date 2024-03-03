@@ -7,13 +7,11 @@ public class BankCustomer
     {
 
     }
-
     public BankCustomer(int Id, string Name)
     {
         this.Id = Id;
         this.Name = Name;
     }
-
 
     public void PrintCustomer()
     {

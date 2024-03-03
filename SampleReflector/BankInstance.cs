@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-namespace Reflections;
+﻿namespace Reflections;
 
 internal class BankInstance
 {
